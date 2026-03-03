@@ -1,5 +1,7 @@
 package Operator
 
+import java.util.Scanner
+
 fun main(){
     val x = 23;
     val y = 2;
@@ -24,4 +26,5 @@ fun main(){
     }else{
         println(3+4)
     }
+
 }
