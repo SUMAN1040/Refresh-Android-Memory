@@ -50,4 +50,19 @@ fun main() {
     println("My char = $myChar")
     println("My bool = $myBool")
 
+
+    val nullableString: String? = null
+    println(nullableString)
+    println(nullableString?.length)
+
+    fun myFun(company: String,product: String, fn: (String,String) -> String): Unit {
+        val result = fn(company,product)
+        println(result)
+    }
+
+    fun main(args: Array<String>){
+        val fn:(String,String)->String={org,portal->"$org develops $portal"}
+        myFun("JetBrains","Kotlin",fn)
+    }
+
 }
